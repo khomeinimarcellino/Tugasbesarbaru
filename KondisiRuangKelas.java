@@ -9,27 +9,27 @@ public class KondisiRuangKelas extends IdentitasRuang {
 
 	public void input() {
 		System.out.println("Panjang Ruangan : ");
-		setPanjangRuang(in.nextInt());
+		super.setPanjangRuang(in.nextInt());
 		System.out.println("Lebar Ruangan : ");
-		setLebarRuang(in.nextInt());
+		super.setLebarRuang(in.nextInt());
 		System.out.println("Jumlah Kursi : ");
-		setJumlahKursi(in.nextInt());
+		super.setJumlahKursi(in.nextInt());
 		System.out.println("Jumlah Pintu : ");
-		setJumlahPintu(in.nextInt());
+		super.setJumlahPintu(in.nextInt());
 		System.out.println("Jumlah Jendela : ");
-		setJumlahJendela(in.nextInt());
+		super.setJumlahJendela(in.nextInt());
 
 	}
 
 	int HitungLuas() {
 
-		return getPanjangRuang() * getLebarRuang();
+		return super.getPanjangRuang() * super.getLebarRuang();
 
 	}
 
 	public int BentukKelas() {
 
-		if (getPanjangRuang() == HitungLuas()) {
+		if (super.getPanjangRuang() == HitungLuas()) {
 			System.out.println("Sesuai");
 			return getPanjangRuang();
 		} else {
@@ -40,7 +40,7 @@ public class KondisiRuangKelas extends IdentitasRuang {
 
 	double Hitungrasio() {
 
-		return HitungLuas() * getJumlahKursi();
+		return HitungLuas() * super.getJumlahKursi();
 
 	}
 
@@ -57,24 +57,24 @@ public class KondisiRuangKelas extends IdentitasRuang {
 
 	public int Analisispintu() {
 
-		if (getJumlahPintu() >= 2) {
+		if (super.getJumlahPintu() >= 2) {
 			System.out.println("Sesuai");
-			return getJumlahPintu();
+			return super.getJumlahPintu();
 		} else {
 			System.out.println("Tidak Sesuai");
-			return getJumlahPintu();
+			return super.getJumlahPintu();
 		}
 
 	}
 
 	public int analisisjendela() {
 
-		if (getJumlahJendela() >= 1) {
+		if (super.getJumlahJendela() >= 1) {
 			System.out.println("Sesuai");
-			return getJumlahJendela();
+			return super.getJumlahJendela();
 		} else {
 			System.out.println("Tidak Sesuai");
-			return getJumlahJendela();
+			return super.getJumlahJendela();
 		}
 
 	}
