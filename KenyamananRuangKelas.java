@@ -9,28 +9,28 @@ public class KenyamananRuangKelas extends KebersihanRuangKelas {
     public int kebisingan(){
         System.out.println("Kebisingan : ");
         System.out.println("1. Bising\n2. Tidak Bising");
-        setKebisingan(in.nextInt());
+        super.setKebisingan(in.nextInt());
         
-        if (getKebisingan() == 1){
+        if (super.getKebisingan() == 1){
             System.out.println("Tidak Sesuai");
-            return getKebisingan();
+            return super.getKebisingan();
         }else{
             System.out.println("Sesuai");
-            return getKebisingan();
+            return super.getKebisingan();
         }
     }
         
     public int bau(){
         System.out.println("Bau : ");
         System.out.println("1. Bau\n2. Tidak Bau");
-        setBau(in.nextInt());
+        super.setBau(in.nextInt());
         
         if (getBau()== 1){
             System.out.println("Tidak Sesuai");
-            return getBau();
+            return super.getBau();
         }else{
             System.out.println("Sesuai");
-            return getBau();
+            return super.getBau();
         }
         }
         
@@ -38,42 +38,42 @@ public class KenyamananRuangKelas extends KebersihanRuangKelas {
         
     	System.out.println("Kebocoran : ");
         System.out.println("1. Bocor\n2. Tidak Bocor");
-        setKebocoran(in.nextInt());
+        super.setKebocoran(in.nextInt());
         
-        if (getKebocoran()== 1){
+        if (super.getKebocoran()== 1){
             System.out.println("Tidak Sesuai");
-            return getKebocoran();
+            return super.getKebocoran();
         }else{
             System.out.println("Sesuai");
-            return getKebocoran();
+            return super.getKebocoran();
         }
     }
         
     public int kerusakan(){
         System.out.println("Kerusakan : ");
         System.out.println("1. Rusak\n2. Tidak Rusak");
-        setKerusakan(in.nextInt());
+        super.setKerusakan(in.nextInt());
         
         if (getKerusakan()== 1){
             System.out.println("Tidak Sesuai");
-            return getKerusakan();
+            return super.getKerusakan();
         }else{
             System.out.println("Sesuai");
-            return getKerusakan();
+            return super.getKerusakan();
         }    
     }
      
     public int keausan(){
         System.out.println("Keausan : ");
         System.out.println("1. Rusak\n2. Tidak Rusak");
-        setKeausan(in.nextInt());
+        super.setKeausan(in.nextInt());
         
         if (getKeausan()== 1){
             System.out.println("Tidak Sesuai");
-            return getKeausan();
+            return super.getKeausan();
         }else{
             System.out.println("Sesuai");
-            return getKeausan();
+            return super.getKeausan();
         }
     }
     
