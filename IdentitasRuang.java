@@ -8,9 +8,9 @@ public class IdentitasRuang extends InventarisBarang {
 
     public void NamaRuang() {
         System.out.println("Nama Ruangan : ");
-        setNamaRuang(in.next());
+        super.setNamaRuang(in.next());
         System.out.println("Lokasi ruang : ");
-        setLokasiRuang(in.next());
+        super.setLokasiRuang(in.next());
     }
 
     public void ProgStudiFakultas() {
@@ -26,9 +26,9 @@ public class IdentitasRuang extends InventarisBarang {
         System.out.println("8. Fakultas Psikologi");
         System.out.println("9. Fakultas Kesehatan");
         System.out.println("10. Fakultas Kedokteran");
-        setFakultas(in.nextInt());
+        super.setFakultas(in.nextInt());
         
-        switch(getFakultas()){
+        switch(super.getFakultas()){
             case 1 : System.out.println("1. Fakultas Ekonomi dan Bisnis");
             break;
             case 2 : System.out.println("2. Fakultas Ilmu Sosial dan Ilmu Politik");
