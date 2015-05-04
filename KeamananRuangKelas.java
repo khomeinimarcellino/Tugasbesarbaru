@@ -10,41 +10,41 @@ public class KeamananRuangKelas extends KenyamananRuangKelas {
 
 		System.out.println("Kekokohan: ");
 		System.out.println("1. Kokoh\n2. Tidak Kokoh");
-		setKekokohan(in.nextInt());
+		super.setKekokohan(in.nextInt());
 
-		if (getKekokohan() == 1) {
+		if (super.getKekokohan() == 1) {
 			System.out.println("Sesuai");
-			return getKekokohan();
+			return super.getKekokohan();
 		} else {
 			System.out.println("Tidak Sesuai");
-			return getKekokohan();
+			return super.getKekokohan();
 		}
 	}
 
 	public int kuncipintujendela() {
 		System.out.println("Kunci pintu dan jendela : ");
 		System.out.println("1. Ada\n2. Tidak Ada");
-		setKunciPintuJendela(in.nextInt());
-		if (getKunciPintuJendela() == 1) {
+		super.setKunciPintuJendela(in.nextInt());
+		if (super.getKunciPintuJendela() == 1) {
 			System.out.println("Sesuai");
-			return getKunciPintuJendela();
+			return super.getKunciPintuJendela();
 		} else {
 			System.out.println("Tidak Sesuai");
-			return getKunciPintuJendela();
+			return super.getKunciPintuJendela();
 		}
 	}
 
 	public int bahaya() {
 		System.out.println("Bahaya : ");
 		System.out.println("1. Aman\n2. Tidak Aman");
-		setBahaya(in.nextInt());
+		super.setBahaya(in.nextInt());
 
-		if (getBahaya() == 1) {
+		if (super.getBahaya() == 1) {
 			System.out.println("Sesuai");
-			return getBahaya();
+			return super.getBahaya();
 		} else {
 			System.out.println("Tidak Sesuai");
-			return getBahaya();
+			return super.getBahaya();
 		}
 	}
 
